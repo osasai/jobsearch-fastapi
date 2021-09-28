@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{obj.title}}</h5>
+      <p class="card-text">年収: {{obj.salary_min}} 〜{{obj.salary_max}}</p>
+      <p class="card-text">必須条件: {{obj.must_requirement[:60]}}</p>
+      <p class="card-text">求人詳細: {{obj.description[:60]}}</p>
+      <p class="card-text">企業名 : {{obj.company[:60]}}</p>
+      <a href="/detail/{{obj.id}}" class="btn btn-primary">Read More</a>
+    </div>
+  </div>

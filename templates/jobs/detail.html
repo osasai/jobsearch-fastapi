@@ -1,0 +1,53 @@
+{% extends "shared/base.html" %} 
+
+{% block title %} 
+  <title>求人詳細：{{job.title}}／{{job.company}}</title>
+{% endblock %} 
+
+{% block content %} 
+<div class="container">
+      <h1 class="display-4 text-danger">DX求人詳細</h1>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">求人名</th>
+            <td>{{job.title}}</td>
+          </tr>
+          <tr>
+            <th scope="row">年収</th>
+            <td>{{job.salary_min}} 〜 {{job.salary_max}}</td>
+          </tr>
+          <tr>
+            <th scope="row">勤務地</th>
+            <td>{{job.location}}</td>
+          </tr>
+          <tr>
+            <th scope="row">必須条件</th>
+            <td>{{job.must_requirement}}</td>
+          </tr>
+          <tr>
+            <th scope="row">歓迎要件</th>
+            <td>{{job.want_requirement}}</td>
+          </tr>
+          <tr>
+            <th scope="row">求人詳細</th>
+            <td>{{job.description}}</td>
+          </tr>
+          <tr>
+            <th scope="row">企業名</th>
+            <td>{{job.company}}</td>
+          </tr>
+          <tr>
+            <th scope="row">企業URL</th>
+            <td>{{job.company_url}}</td>
+          </tr>
+          <tr>
+            <th scope="row">企業詳細</th>
+            <td>{{job.company_information}}</td>
+          </tr>
+        </tbody>
+      </table>
+  
+</div>
+
+{% endblock %}
