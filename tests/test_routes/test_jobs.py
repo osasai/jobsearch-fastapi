@@ -1,5 +1,6 @@
 import json
 
+
 def test_create_job(client,normal_user_token_headers):
     data = {
         "title":"SDE 1 Yahoo",
